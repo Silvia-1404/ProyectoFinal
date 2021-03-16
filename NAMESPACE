@@ -2,3 +2,5 @@
 
 export(pmedio)
 export(rectangulo)
+export(simpson)
+export(trapecio)
