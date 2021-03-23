@@ -1,6 +1,6 @@
 #' Integracion por la regla de simpson
 #'
-#' @param f funcion a integrar
+#' @param f funcion a integrar, se mete aparte
 #' @param a un punto
 #' @param b otro punto
 #'
@@ -8,7 +8,8 @@
 #' @export
 #'
 #' @examples
-#' simpson(x^2,0,1)
+#' simpson(f,0,1)
+f <- function(x) {return(x^3)}
 simpson <- function(f, a, b) {
   return((b-a)/6)*(f(a)+4*f((a+b)/2)+f(b))
 }
